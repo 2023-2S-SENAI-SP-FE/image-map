@@ -6,7 +6,10 @@ describe('Testes E2E para o Projeto Carro', () => {
 
     });
 
-    context('Testes para Desktop', () => {
+    context('Testes para  (padrão)', () => {
+        beforeEach(() => {
+            cy.viewport(1000, 660);
+        })
 
         it('Verifica se a altura do overlay é o mesmo da imagem base', () => {
 
@@ -116,7 +119,7 @@ describe('Testes E2E para o Projeto Carro', () => {
 
     });
 
-    context('Testes para Mobile', () => {
+    context('Testes para Mobile (380 x 600)', () => {
 
         beforeEach(() => {
 
